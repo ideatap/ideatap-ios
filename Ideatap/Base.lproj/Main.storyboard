@@ -47,16 +47,26 @@
                                     <action selector="logout:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Mo-lL-vNW"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r6C-Il-d7G">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="LIW-sU-T4s"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Mmo-Zg-BEG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="DuL-4w-2MK"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="r6C-Il-d7G" secondAttribute="bottom" constant="150" id="E60-Fy-cUz"/>
                             <constraint firstItem="gBT-ce-sTK" firstAttribute="trailing" secondItem="Mmo-Zg-BEG" secondAttribute="trailing" id="R3e-5H-nwv"/>
+                            <constraint firstItem="r6C-Il-d7G" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="d9i-mf-szR"/>
                             <constraint firstItem="gBT-ce-sTK" firstAttribute="baseline" secondItem="Mmo-Zg-BEG" secondAttribute="baseline" id="q6F-EB-vGv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Mmo-Zg-BEG" secondAttribute="trailing" constant="8" id="u2K-vJ-f5E"/>
+                            <constraint firstItem="r6C-Il-d7G" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="x4j-db-BXg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="r6C-Il-d7G" id="2vE-Ig-TYN"/>
                         <outlet property="loginBtn" destination="Mmo-Zg-BEG" id="Fg2-S1-cOK"/>
                         <outlet property="logoutBtn" destination="6Kp-fh-D99" id="bYD-Rz-vcc"/>
                         <outlet property="username" destination="gBT-ce-sTK" id="42y-Jf-TEs"/>
