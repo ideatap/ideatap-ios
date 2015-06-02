@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,46 +17,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wda-gR-OxY">
-                                <rect key="frame" x="192" y="72" width="217" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmo-Zg-BEG">
+                                <rect key="frame" x="484" y="20" width="92" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="217" id="1o3-56-TUK"/>
+                                    <constraint firstAttribute="width" constant="92" id="R2a-eR-ccr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c64-KP-XLY">
-                                <rect key="frame" x="241" y="163" width="119" height="30"/>
-                                <state key="normal" title="Update condition">
+                                <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="updateCondition:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tu5-JH-IvM"/>
+                                    <action selector="login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DQi-li-VyA"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yFH-65-zE7">
-                                <rect key="frame" x="158" y="125" width="285" height="30"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBT-ce-sTK">
+                                <rect key="frame" x="401" y="24" width="175" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="285" id="V8a-tO-Fpg"/>
+                                    <constraint firstAttribute="width" constant="175" id="EVV-Oe-ehY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kp-fh-D99">
+                                <rect key="frame" x="16" y="20" width="127" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Mo-lL-vNW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yFH-65-zE7" firstAttribute="centerX" secondItem="Wda-gR-OxY" secondAttribute="centerX" id="FSf-C0-R8j"/>
-                            <constraint firstItem="c64-KP-XLY" firstAttribute="centerX" secondItem="yFH-65-zE7" secondAttribute="centerX" id="HgD-ci-1fp"/>
-                            <constraint firstItem="c64-KP-XLY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="RcA-by-ImY"/>
-                            <constraint firstItem="Wda-gR-OxY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="52" id="Ytl-hu-HHm"/>
-                            <constraint firstItem="c64-KP-XLY" firstAttribute="top" secondItem="yFH-65-zE7" secondAttribute="bottom" constant="8" symbolic="YES" id="lQ3-xX-zrJ"/>
-                            <constraint firstItem="yFH-65-zE7" firstAttribute="top" secondItem="Wda-gR-OxY" secondAttribute="bottom" constant="32" id="vcV-o7-Vq0"/>
+                            <constraint firstItem="Mmo-Zg-BEG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="DuL-4w-2MK"/>
+                            <constraint firstItem="gBT-ce-sTK" firstAttribute="trailing" secondItem="Mmo-Zg-BEG" secondAttribute="trailing" id="R3e-5H-nwv"/>
+                            <constraint firstItem="gBT-ce-sTK" firstAttribute="baseline" secondItem="Mmo-Zg-BEG" secondAttribute="baseline" id="q6F-EB-vGv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mmo-Zg-BEG" secondAttribute="trailing" constant="8" id="u2K-vJ-f5E"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="conditionField" destination="yFH-65-zE7" id="ojR-Bz-ntR"/>
-                        <outlet property="conditionLabel" destination="Wda-gR-OxY" id="5Sb-89-1dV"/>
+                        <outlet property="loginBtn" destination="Mmo-Zg-BEG" id="Fg2-S1-cOK"/>
+                        <outlet property="logoutBtn" destination="6Kp-fh-D99" id="bYD-Rz-vcc"/>
+                        <outlet property="username" destination="gBT-ce-sTK" id="42y-Jf-TEs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

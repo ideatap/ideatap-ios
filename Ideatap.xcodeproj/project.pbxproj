@@ -13,6 +13,20 @@
 		779964471B1E299300A790A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779964461B1E299300A790A5 /* Images.xcassets */; };
 		7799644A1B1E299300A790A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 779964481B1E299300A790A5 /* LaunchScreen.xib */; };
 		779964561B1E299300A790A5 /* IdeatapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779964551B1E299300A790A5 /* IdeatapTests.swift */; };
+		779C21511B1E402200896B81 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21501B1E402200896B81 /* AddressBook.framework */; };
+		779C21531B1E402A00896B81 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21521B1E402A00896B81 /* AssetsLibrary.framework */; };
+		779C21551B1E403100896B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21541B1E403100896B81 /* Foundation.framework */; };
+		779C21571B1E403800896B81 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21561B1E403800896B81 /* CoreLocation.framework */; };
+		779C21591B1E403E00896B81 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21581B1E403E00896B81 /* CoreMotion.framework */; };
+		779C215B1B1E404600896B81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C215A1B1E404600896B81 /* CoreGraphics.framework */; };
+		779C215D1B1E404F00896B81 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C215C1B1E404F00896B81 /* CoreText.framework */; };
+		779C215F1B1E405500896B81 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C215E1B1E405500896B81 /* MediaPlayer.framework */; };
+		779C21611B1E405C00896B81 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21601B1E405C00896B81 /* Security.framework */; };
+		779C21631B1E406400896B81 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21621B1E406400896B81 /* SystemConfiguration.framework */; };
+		779C21651B1E406B00896B81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21641B1E406B00896B81 /* UIKit.framework */; };
+		779C21691B1E427D00896B81 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21661B1E427D00896B81 /* GoogleOpenSource.framework */; };
+		779C216A1B1E427D00896B81 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 779C21671B1E427D00896B81 /* GooglePlus.bundle */; };
+		779C216B1B1E427D00896B81 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21681B1E427D00896B81 /* GooglePlus.framework */; };
 		C9C191748E2763476680C4A5 /* Pods_Ideatap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CE9A878D215EBD2EE10570 /* Pods_Ideatap.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -38,6 +52,20 @@
 		779964541B1E299300A790A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		779964551B1E299300A790A5 /* IdeatapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeatapTests.swift; sourceTree = "<group>"; };
 		7799645F1B1E2B1D00A790A5 /* Ideatap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ideatap-Bridging-Header.h"; sourceTree = "<group>"; };
+		779C21501B1E402200896B81 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		779C21521B1E402A00896B81 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		779C21541B1E403100896B81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		779C21561B1E403800896B81 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		779C21581B1E403E00896B81 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		779C215A1B1E404600896B81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		779C215C1B1E404F00896B81 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		779C215E1B1E405500896B81 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		779C21601B1E405C00896B81 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		779C21621B1E406400896B81 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		779C21641B1E406B00896B81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		779C21661B1E427D00896B81 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		779C21671B1E427D00896B81 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		779C21681B1E427D00896B81 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		94CE9A878D215EBD2EE10570 /* Pods_Ideatap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ideatap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E48BB7F983A6B1FB8564B3 /* Pods-Ideatap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ideatap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ideatap/Pods-Ideatap.debug.xcconfig"; sourceTree = "<group>"; };
 		FCFA7572942FC8DEA259D04C /* Pods-Ideatap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ideatap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ideatap/Pods-Ideatap.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +76,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779C21651B1E406B00896B81 /* UIKit.framework in Frameworks */,
+				779C21631B1E406400896B81 /* SystemConfiguration.framework in Frameworks */,
+				779C21691B1E427D00896B81 /* GoogleOpenSource.framework in Frameworks */,
+				779C21611B1E405C00896B81 /* Security.framework in Frameworks */,
+				779C215F1B1E405500896B81 /* MediaPlayer.framework in Frameworks */,
+				779C215D1B1E404F00896B81 /* CoreText.framework in Frameworks */,
+				779C215B1B1E404600896B81 /* CoreGraphics.framework in Frameworks */,
+				779C21591B1E403E00896B81 /* CoreMotion.framework in Frameworks */,
+				779C21571B1E403800896B81 /* CoreLocation.framework in Frameworks */,
+				779C216B1B1E427D00896B81 /* GooglePlus.framework in Frameworks */,
+				779C21551B1E403100896B81 /* Foundation.framework in Frameworks */,
+				779C21531B1E402A00896B81 /* AssetsLibrary.framework in Frameworks */,
+				779C21511B1E402200896B81 /* AddressBook.framework in Frameworks */,
 				C9C191748E2763476680C4A5 /* Pods_Ideatap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +132,7 @@
 				779964461B1E299300A790A5 /* Images.xcassets */,
 				779964481B1E299300A790A5 /* LaunchScreen.xib */,
 				7799643D1B1E299300A790A5 /* Supporting Files */,
+				779C21471B1E3FFD00896B81 /* Frameworks */,
 				7799645F1B1E2B1D00A790A5 /* Ideatap-Bridging-Header.h */,
 			);
 			path = Ideatap;
@@ -121,9 +163,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		779C21471B1E3FFD00896B81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				779C21661B1E427D00896B81 /* GoogleOpenSource.framework */,
+				779C21671B1E427D00896B81 /* GooglePlus.bundle */,
+				779C21681B1E427D00896B81 /* GooglePlus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF36C9D1B62675FCBCB8301F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				779C21641B1E406B00896B81 /* UIKit.framework */,
+				779C21621B1E406400896B81 /* SystemConfiguration.framework */,
+				779C21601B1E405C00896B81 /* Security.framework */,
+				779C215E1B1E405500896B81 /* MediaPlayer.framework */,
+				779C215C1B1E404F00896B81 /* CoreText.framework */,
+				779C215A1B1E404600896B81 /* CoreGraphics.framework */,
+				779C21581B1E403E00896B81 /* CoreMotion.framework */,
+				779C21561B1E403800896B81 /* CoreLocation.framework */,
+				779C21541B1E403100896B81 /* Foundation.framework */,
+				779C21521B1E402A00896B81 /* AssetsLibrary.framework */,
+				779C21501B1E402200896B81 /* AddressBook.framework */,
 				94CE9A878D215EBD2EE10570 /* Pods_Ideatap.framework */,
 			);
 			name = Frameworks;
@@ -223,6 +286,7 @@
 			files = (
 				779964451B1E299300A790A5 /* Main.storyboard in Resources */,
 				7799644A1B1E299300A790A5 /* LaunchScreen.xib in Resources */,
+				779C216A1B1E427D00896B81 /* GooglePlus.bundle in Resources */,
 				779964471B1E299300A790A5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +483,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Ideatap",
+				);
 				INFOPLIST_FILE = Ideatap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -434,6 +503,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Ideatap",
+				);
 				INFOPLIST_FILE = Ideatap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
