@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09C45A2960F85BB055872295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16D9375AAAB78E4F0FA9E68 /* Foundation.framework */; };
+		102A1C5AA366D14B0AB5724F /* Pods-Ideatap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC14673CBFCC1E6B29C5335 /* Pods-Ideatap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6C81F40643BDC5EA0EBFBE2 /* Pods-Ideatap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E952730C12F10AA2D895A2 /* Pods-Ideatap-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20036E469A125341CC4043F1 /* Pods-Ideatap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ideatap-acknowledgements.markdown"; sourceTree = "<group>"; };
+		38FEF0DE0A7A177D7926EBA2 /* Pods-Ideatap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ideatap.debug.xcconfig"; sourceTree = "<group>"; };
+		785FA1449F7156FC0DE8318F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78E952730C12F10AA2D895A2 /* Pods-Ideatap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ideatap-dummy.m"; sourceTree = "<group>"; };
+		8B2FFB66F724C8A43EF0F25C /* Pods-Ideatap-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ideatap-environment.h"; sourceTree = "<group>"; };
+		9E0BB69E042EECD164996EF3 /* Pods-Ideatap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ideatap-acknowledgements.plist"; sourceTree = "<group>"; };
+		9FC14673CBFCC1E6B29C5335 /* Pods-Ideatap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ideatap-umbrella.h"; sourceTree = "<group>"; };
+		C8B79EA91C2DA54DB2FA0AA5 /* Pods_Ideatap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ideatap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C675AA86B2AC9511309036 /* Pods-Ideatap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ideatap-resources.sh"; sourceTree = "<group>"; };
+		D16D9375AAAB78E4F0FA9E68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E60B307AB0C8BB8DE8C4AFAE /* Pods-Ideatap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ideatap.release.xcconfig"; sourceTree = "<group>"; };
+		E7FF49425E05AB0A4E6DEE17 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F8B550BE6EC1DF988F7178AD /* Pods-Ideatap-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ideatap-frameworks.sh"; sourceTree = "<group>"; };
+		F985866FB0A0BA576C5FBE8E /* Pods-Ideatap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Ideatap.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED96D7178B06F27E8C0D1AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C45A2960F85BB055872295 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FF35331FBB5B773663B41C0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E17BE036EAD37234E0386E7 /* Pods-Ideatap */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2E17BE036EAD37234E0386E7 /* Pods-Ideatap */ = {
+			isa = PBXGroup;
+			children = (
+				785FA1449F7156FC0DE8318F /* Info.plist */,
+				F985866FB0A0BA576C5FBE8E /* Pods-Ideatap.modulemap */,
+				20036E469A125341CC4043F1 /* Pods-Ideatap-acknowledgements.markdown */,
+				9E0BB69E042EECD164996EF3 /* Pods-Ideatap-acknowledgements.plist */,
+				78E952730C12F10AA2D895A2 /* Pods-Ideatap-dummy.m */,
+				8B2FFB66F724C8A43EF0F25C /* Pods-Ideatap-environment.h */,
+				F8B550BE6EC1DF988F7178AD /* Pods-Ideatap-frameworks.sh */,
+				D0C675AA86B2AC9511309036 /* Pods-Ideatap-resources.sh */,
+				9FC14673CBFCC1E6B29C5335 /* Pods-Ideatap-umbrella.h */,
+				38FEF0DE0A7A177D7926EBA2 /* Pods-Ideatap.debug.xcconfig */,
+				E60B307AB0C8BB8DE8C4AFAE /* Pods-Ideatap.release.xcconfig */,
+			);
+			name = "Pods-Ideatap";
+			path = "Target Support Files/Pods-Ideatap";
+			sourceTree = "<group>";
+		};
+		43A5AAA15F92F4BB50D22780 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFC80EEE18C92D505AEEC2B5 /* Firebase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5ED0ADA719E30AA088C52F6B = {
+			isa = PBXGroup;
+			children = (
+				E7FF49425E05AB0A4E6DEE17 /* Podfile */,
+				F5D202F2183D2A5B83A66C7F /* Frameworks */,
+				43A5AAA15F92F4BB50D22780 /* Pods */,
+				CBF1D252AFC9180F97F8DE85 /* Products */,
+				0FF35331FBB5B773663B41C0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AFC80EEE18C92D505AEEC2B5 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		CBF1D252AFC9180F97F8DE85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8B79EA91C2DA54DB2FA0AA5 /* Pods_Ideatap.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D51FE3A5B5E229AA6B10E559 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D16D9375AAAB78E4F0FA9E68 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F5D202F2183D2A5B83A66C7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D51FE3A5B5E229AA6B10E559 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2171BDCF097105A829F7D8E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102A1C5AA366D14B0AB5724F /* Pods-Ideatap-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		865ABA993B57858C7211A6C8 /* Pods-Ideatap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75165924A5F8B16EEA5FE788 /* Build configuration list for PBXNativeTarget "Pods-Ideatap" */;
+			buildPhases = (
+				785499764C1618D0A9247AC7 /* Sources */,
+				ED96D7178B06F27E8C0D1AB2 /* Frameworks */,
+				2171BDCF097105A829F7D8E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Ideatap";
+			productName = "Pods-Ideatap";
+			productReference = C8B79EA91C2DA54DB2FA0AA5 /* Pods_Ideatap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B4BF5E7DCD1FB563574036B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = D6E5AE37605106A66E5D9C3A /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5ED0ADA719E30AA088C52F6B;
+			productRefGroup = CBF1D252AFC9180F97F8DE85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				865ABA993B57858C7211A6C8 /* Pods-Ideatap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		785499764C1618D0A9247AC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C81F40643BDC5EA0EBFBE2 /* Pods-Ideatap-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		06A6374073EF958AD36E68A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E60B307AB0C8BB8DE8C4AFAE /* Pods-Ideatap.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Ideatap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Ideatap/Pods-Ideatap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Ideatap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		394542B7E9757F0E3F0B88CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38FEF0DE0A7A177D7926EBA2 /* Pods-Ideatap.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Ideatap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Ideatap/Pods-Ideatap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Ideatap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		770C75D76E776BE0889D472D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F66B2A7545FC0A6C9F0F3775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75165924A5F8B16EEA5FE788 /* Build configuration list for PBXNativeTarget "Pods-Ideatap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				394542B7E9757F0E3F0B88CF /* Debug */,
+				06A6374073EF958AD36E68A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6E5AE37605106A66E5D9C3A /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66B2A7545FC0A6C9F0F3775 /* Debug */,
+				770C75D76E776BE0889D472D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B4BF5E7DCD1FB563574036B /* Project object */;
+}

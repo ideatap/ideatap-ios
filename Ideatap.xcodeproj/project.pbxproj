@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		779964401B1E299300A790A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799643F1B1E299300A790A5 /* AppDelegate.swift */; };
+		779964421B1E299300A790A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779964411B1E299300A790A5 /* ViewController.swift */; };
+		779964451B1E299300A790A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779964431B1E299300A790A5 /* Main.storyboard */; };
+		779964471B1E299300A790A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779964461B1E299300A790A5 /* Images.xcassets */; };
+		7799644A1B1E299300A790A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 779964481B1E299300A790A5 /* LaunchScreen.xib */; };
+		779964561B1E299300A790A5 /* IdeatapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779964551B1E299300A790A5 /* IdeatapTests.swift */; };
+		C9C191748E2763476680C4A5 /* Pods_Ideatap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CE9A878D215EBD2EE10570 /* Pods_Ideatap.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		779964501B1E299300A790A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779964321B1E299300A790A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 779964391B1E299300A790A5;
+			remoteInfo = Ideatap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7799643A1B1E299300A790A5 /* Ideatap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ideatap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7799643E1B1E299300A790A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7799643F1B1E299300A790A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		779964411B1E299300A790A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		779964441B1E299300A790A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		779964461B1E299300A790A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		779964491B1E299300A790A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7799644F1B1E299300A790A5 /* IdeatapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdeatapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		779964541B1E299300A790A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779964551B1E299300A790A5 /* IdeatapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeatapTests.swift; sourceTree = "<group>"; };
+		7799645F1B1E2B1D00A790A5 /* Ideatap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ideatap-Bridging-Header.h"; sourceTree = "<group>"; };
+		94CE9A878D215EBD2EE10570 /* Pods_Ideatap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ideatap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E48BB7F983A6B1FB8564B3 /* Pods-Ideatap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ideatap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ideatap/Pods-Ideatap.debug.xcconfig"; sourceTree = "<group>"; };
+		FCFA7572942FC8DEA259D04C /* Pods-Ideatap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ideatap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ideatap/Pods-Ideatap.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		779964371B1E299300A790A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C191748E2763476680C4A5 /* Pods_Ideatap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7799644C1B1E299300A790A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		779964311B1E299300A790A5 = {
+			isa = PBXGroup;
+			children = (
+				7799643C1B1E299300A790A5 /* Ideatap */,
+				779964521B1E299300A790A5 /* IdeatapTests */,
+				7799643B1B1E299300A790A5 /* Products */,
+				FCFF98A00E5EB6ACDACDEF6C /* Pods */,
+				EF36C9D1B62675FCBCB8301F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7799643B1B1E299300A790A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7799643A1B1E299300A790A5 /* Ideatap.app */,
+				7799644F1B1E299300A790A5 /* IdeatapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7799643C1B1E299300A790A5 /* Ideatap */ = {
+			isa = PBXGroup;
+			children = (
+				7799643F1B1E299300A790A5 /* AppDelegate.swift */,
+				779964411B1E299300A790A5 /* ViewController.swift */,
+				779964431B1E299300A790A5 /* Main.storyboard */,
+				779964461B1E299300A790A5 /* Images.xcassets */,
+				779964481B1E299300A790A5 /* LaunchScreen.xib */,
+				7799643D1B1E299300A790A5 /* Supporting Files */,
+				7799645F1B1E2B1D00A790A5 /* Ideatap-Bridging-Header.h */,
+			);
+			path = Ideatap;
+			sourceTree = "<group>";
+		};
+		7799643D1B1E299300A790A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7799643E1B1E299300A790A5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		779964521B1E299300A790A5 /* IdeatapTests */ = {
+			isa = PBXGroup;
+			children = (
+				779964551B1E299300A790A5 /* IdeatapTests.swift */,
+				779964531B1E299300A790A5 /* Supporting Files */,
+			);
+			path = IdeatapTests;
+			sourceTree = "<group>";
+		};
+		779964531B1E299300A790A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				779964541B1E299300A790A5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF36C9D1B62675FCBCB8301F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94CE9A878D215EBD2EE10570 /* Pods_Ideatap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCFF98A00E5EB6ACDACDEF6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2E48BB7F983A6B1FB8564B3 /* Pods-Ideatap.debug.xcconfig */,
+				FCFA7572942FC8DEA259D04C /* Pods-Ideatap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		779964391B1E299300A790A5 /* Ideatap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779964591B1E299300A790A5 /* Build configuration list for PBXNativeTarget "Ideatap" */;
+			buildPhases = (
+				8732E023D3AEFC2B3B8194A8 /* Check Pods Manifest.lock */,
+				779964361B1E299300A790A5 /* Sources */,
+				779964371B1E299300A790A5 /* Frameworks */,
+				779964381B1E299300A790A5 /* Resources */,
+				39542FB89878AA5CB6814999 /* Embed Pods Frameworks */,
+				8C6E89A9BB52760E0AD5F05F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ideatap;
+			productName = Ideatap;
+			productReference = 7799643A1B1E299300A790A5 /* Ideatap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7799644E1B1E299300A790A5 /* IdeatapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7799645C1B1E299300A790A5 /* Build configuration list for PBXNativeTarget "IdeatapTests" */;
+			buildPhases = (
+				7799644B1B1E299300A790A5 /* Sources */,
+				7799644C1B1E299300A790A5 /* Frameworks */,
+				7799644D1B1E299300A790A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				779964511B1E299300A790A5 /* PBXTargetDependency */,
+			);
+			name = IdeatapTests;
+			productName = IdeatapTests;
+			productReference = 7799644F1B1E299300A790A5 /* IdeatapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		779964321B1E299300A790A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Ideatap;
+				TargetAttributes = {
+					779964391B1E299300A790A5 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					7799644E1B1E299300A790A5 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 779964391B1E299300A790A5;
+					};
+				};
+			};
+			buildConfigurationList = 779964351B1E299300A790A5 /* Build configuration list for PBXProject "Ideatap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 779964311B1E299300A790A5;
+			productRefGroup = 7799643B1B1E299300A790A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				779964391B1E299300A790A5 /* Ideatap */,
+				7799644E1B1E299300A790A5 /* IdeatapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		779964381B1E299300A790A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779964451B1E299300A790A5 /* Main.storyboard in Resources */,
+				7799644A1B1E299300A790A5 /* LaunchScreen.xib in Resources */,
+				779964471B1E299300A790A5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7799644D1B1E299300A790A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39542FB89878AA5CB6814999 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ideatap/Pods-Ideatap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8732E023D3AEFC2B3B8194A8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C6E89A9BB52760E0AD5F05F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ideatap/Pods-Ideatap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		779964361B1E299300A790A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779964421B1E299300A790A5 /* ViewController.swift in Sources */,
+				779964401B1E299300A790A5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7799644B1B1E299300A790A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779964561B1E299300A790A5 /* IdeatapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		779964511B1E299300A790A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 779964391B1E299300A790A5 /* Ideatap */;
+			targetProxy = 779964501B1E299300A790A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		779964431B1E299300A790A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779964441B1E299300A790A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		779964481B1E299300A790A5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779964491B1E299300A790A5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		779964571B1E299300A790A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		779964581B1E299300A790A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7799645A1B1E299300A790A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E48BB7F983A6B1FB8564B3 /* Pods-Ideatap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Ideatap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ideatap/Ideatap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7799645B1B1E299300A790A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFA7572942FC8DEA259D04C /* Pods-Ideatap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Ideatap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ideatap/Ideatap-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		7799645D1B1E299300A790A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IdeatapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ideatap.app/Ideatap";
+			};
+			name = Debug;
+		};
+		7799645E1B1E299300A790A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IdeatapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ideatap.app/Ideatap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		779964351B1E299300A790A5 /* Build configuration list for PBXProject "Ideatap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779964571B1E299300A790A5 /* Debug */,
+				779964581B1E299300A790A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779964591B1E299300A790A5 /* Build configuration list for PBXNativeTarget "Ideatap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7799645A1B1E299300A790A5 /* Debug */,
+				7799645B1B1E299300A790A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7799645C1B1E299300A790A5 /* Build configuration list for PBXNativeTarget "IdeatapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7799645D1B1E299300A790A5 /* Debug */,
+				7799645E1B1E299300A790A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 779964321B1E299300A790A5 /* Project object */;
+}
