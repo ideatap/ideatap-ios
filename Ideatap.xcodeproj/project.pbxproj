@@ -27,6 +27,11 @@
 		779C21691B1E427D00896B81 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21661B1E427D00896B81 /* GoogleOpenSource.framework */; };
 		779C216A1B1E427D00896B81 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 779C21671B1E427D00896B81 /* GooglePlus.bundle */; };
 		779C216B1B1E427D00896B81 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C21681B1E427D00896B81 /* GooglePlus.framework */; };
+		77ECD0091B222DDC00705D4B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ECD0081B222DDC00705D4B /* loginViewController.swift */; };
+		77ECD00D1B22331E00705D4B /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ECD00C1B22331E00705D4B /* LoginHelper.swift */; };
+		77ECD0111B22511E00705D4B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ECD0101B22511E00705D4B /* Social.framework */; };
+		77ECD0131B22512400705D4B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ECD0121B22512400705D4B /* Accounts.framework */; };
+		77ECD0181B2251D200705D4B /* TwitterAuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ECD0171B2251D200705D4B /* TwitterAuthHelper.m */; };
 		C9C191748E2763476680C4A5 /* Pods_Ideatap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CE9A878D215EBD2EE10570 /* Pods_Ideatap.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -66,6 +71,13 @@
 		779C21661B1E427D00896B81 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
 		779C21671B1E427D00896B81 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
 		779C21681B1E427D00896B81 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		77ECD0081B222DDC00705D4B /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		77ECD00C1B22331E00705D4B /* LoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
+		77ECD00E1B224FA300705D4B /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		77ECD0101B22511E00705D4B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		77ECD0121B22512400705D4B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		77ECD0161B2251D200705D4B /* TwitterAuthHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterAuthHelper.h; sourceTree = "<group>"; };
+		77ECD0171B2251D200705D4B /* TwitterAuthHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthHelper.m; sourceTree = "<group>"; };
 		94CE9A878D215EBD2EE10570 /* Pods_Ideatap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ideatap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E48BB7F983A6B1FB8564B3 /* Pods-Ideatap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ideatap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ideatap/Pods-Ideatap.debug.xcconfig"; sourceTree = "<group>"; };
 		FCFA7572942FC8DEA259D04C /* Pods-Ideatap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ideatap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ideatap/Pods-Ideatap.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77ECD0131B22512400705D4B /* Accounts.framework in Frameworks */,
+				77ECD0111B22511E00705D4B /* Social.framework in Frameworks */,
 				779C21651B1E406B00896B81 /* UIKit.framework in Frameworks */,
 				779C21631B1E406400896B81 /* SystemConfiguration.framework in Frameworks */,
 				779C21691B1E427D00896B81 /* GoogleOpenSource.framework in Frameworks */,
@@ -128,12 +142,16 @@
 			children = (
 				7799643F1B1E299300A790A5 /* AppDelegate.swift */,
 				779964411B1E299300A790A5 /* ViewController.swift */,
+				77ECD0081B222DDC00705D4B /* loginViewController.swift */,
+				77ECD00C1B22331E00705D4B /* LoginHelper.swift */,
 				779964431B1E299300A790A5 /* Main.storyboard */,
 				779964461B1E299300A790A5 /* Images.xcassets */,
 				779964481B1E299300A790A5 /* LaunchScreen.xib */,
 				7799643D1B1E299300A790A5 /* Supporting Files */,
 				779C21471B1E3FFD00896B81 /* Frameworks */,
 				7799645F1B1E2B1D00A790A5 /* Ideatap-Bridging-Header.h */,
+				77ECD0161B2251D200705D4B /* TwitterAuthHelper.h */,
+				77ECD0171B2251D200705D4B /* TwitterAuthHelper.m */,
 			);
 			path = Ideatap;
 			sourceTree = "<group>";
@@ -176,6 +194,9 @@
 		EF36C9D1B62675FCBCB8301F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77ECD0121B22512400705D4B /* Accounts.framework */,
+				77ECD0101B22511E00705D4B /* Social.framework */,
+				77ECD00E1B224FA300705D4B /* Twitter.framework */,
 				779C21641B1E406B00896B81 /* UIKit.framework */,
 				779C21621B1E406400896B81 /* SystemConfiguration.framework */,
 				779C21601B1E405C00896B81 /* Security.framework */,
@@ -354,7 +375,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				779964421B1E299300A790A5 /* ViewController.swift in Sources */,
+				77ECD0181B2251D200705D4B /* TwitterAuthHelper.m in Sources */,
+				77ECD00D1B22331E00705D4B /* LoginHelper.swift in Sources */,
 				779964401B1E299300A790A5 /* AppDelegate.swift in Sources */,
+				77ECD0091B222DDC00705D4B /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
