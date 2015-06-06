@@ -27,12 +27,17 @@
 			<string>io.ideatap.Ideatap</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>fb487514731425074</string>
 				<string>io.ideatap.Ideatap</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>487514731425074</string>
+	<key>FacebookDisplayName</key>
+	<string>ideatap.io</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

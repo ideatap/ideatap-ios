@@ -3,6 +3,11 @@
 //
 
 #import <Firebase/Firebase.h>
+
 #import <GooglePlus/GooglePlus.h>
 #import <GoogleOpenSource/GoogleOpenSource.h>
+
 #import "TwitterAuthHelper.h"
+
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>

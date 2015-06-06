@@ -42,7 +42,9 @@ class LoginHelper : NSObject {
             } else if accounts.count >= 1 {
                 // Select an account. Here we pick the first one for simplicity
                 let account = accounts[0] as? ACAccount
-                twitterAuthHelper.authenticateAccount(account, withCallback: { error, authData in
+                twitterAuthHelper.authenticateAccount(account, withCallback: {
+                    error, authData in
+                    
                     if error != nil {
                         // Error authenticating account
                     } else {
@@ -54,21 +56,60 @@ class LoginHelper : NSObject {
         }
     }
     
+    func authenticateWithFacebook() {
+        let facebookLogin = FBSDKLoginManager()
+        facebookLogin.logInWithReadPermissions(["email"], handler: {
+            (result, error) -> Void in
+            
+            if error != nil {
+                println("error")
+            }else if result.isCancelled {
+                println("user cancelled")
+                self.closure()
+            }else {
+                let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
+                self.register("facebook", authData: accessToken)
+            }
+        })
+        
+    }
+    
     func register(provider: String, authData: AnyObject) {
-        if provider == "google" {
-            fb.authWithOAuthProvider(provider, token: authData.accessToken,
-                withCompletionBlock: { error, authData in
+        if provider == "google" || provider == "facebook" {
+            var accessToken: String = {
+                if provider == "facebook" {
+                    return authData as! String
+                }else {
+                    return authData.accessToken
+                }
+            }()
+            fb.authWithOAuthProvider(provider, token: accessToken,
+                withCompletionBlock: {
+                    error, authData in
+                    
                     if error == nil {
                         // All of this should be done better!!
-                        var newUser = [
-                            "provider": authData.provider,
-                            "email": authData.providerData["email"] as! String,
-                            "username": authData.providerData["displayName"] as! String,
-                            "first_name": authData.providerData["cachedUserProfile"]!["given_name"] as! String,
-                            "last_name": authData.providerData["cachedUserProfile"]!["family_name"] as! String,
-                            "locale": authData.providerData["cachedUserProfile"]!["locale"] as! String,
-                            "image": authData.providerData["cachedUserProfile"]!["picture"] as! String,
-                        ]
+                        var newUser = ["":""]
+                        if provider == "facebook" {
+                            println(authData)
+                            println(authData.providerData)
+                            newUser = [
+                                "provider": authData.provider,
+                                "email": authData.providerData["email"] as! String,
+                                "name": authData.providerData["displayName"] as! String,
+                                "provider_id": authData.providerData["id"] as! String,
+                            ]
+                        }else {
+                            newUser = [
+                                "provider": authData.provider,
+                                "email": authData.providerData["email"] as! String,
+                                "username": authData.providerData["displayName"] as! String,
+                                "first_name": authData.providerData["cachedUserProfile"]!["given_name"] as! String,
+                                "last_name": authData.providerData["cachedUserProfile"]!["family_name"] as! String,
+                                "locale": authData.providerData["cachedUserProfile"]!["locale"] as! String,
+                                "image": authData.providerData["cachedUserProfile"]!["picture"] as! String,
+                            ]
+                        }
                         self.fb.childByAppendingPath("users")
                             .childByAppendingPath(authData.uid).setValue(newUser)
                         self.closure()
@@ -99,6 +140,7 @@ class LoginHelper : NSObject {
             authenticateWithGoogle()
             break;
         case "facebook":
+            authenticateWithFacebook()
             break;
         case "twitter":
             authenticateWithTwitter()

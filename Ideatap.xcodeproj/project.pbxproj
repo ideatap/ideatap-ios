@@ -32,6 +32,8 @@
 		77ECD0111B22511E00705D4B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ECD0101B22511E00705D4B /* Social.framework */; };
 		77ECD0131B22512400705D4B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ECD0121B22512400705D4B /* Accounts.framework */; };
 		77ECD0181B2251D200705D4B /* TwitterAuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ECD0171B2251D200705D4B /* TwitterAuthHelper.m */; };
+		77ECD0231B227A5100705D4B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ECD0211B227A5100705D4B /* FBSDKCoreKit.framework */; };
+		77ECD0241B227A5100705D4B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ECD0221B227A5100705D4B /* FBSDKLoginKit.framework */; };
 		C9C191748E2763476680C4A5 /* Pods_Ideatap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CE9A878D215EBD2EE10570 /* Pods_Ideatap.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		77ECD0121B22512400705D4B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		77ECD0161B2251D200705D4B /* TwitterAuthHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterAuthHelper.h; sourceTree = "<group>"; };
 		77ECD0171B2251D200705D4B /* TwitterAuthHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthHelper.m; sourceTree = "<group>"; };
+		77ECD0211B227A5100705D4B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		77ECD0221B227A5100705D4B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		94CE9A878D215EBD2EE10570 /* Pods_Ideatap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ideatap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E48BB7F983A6B1FB8564B3 /* Pods-Ideatap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ideatap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ideatap/Pods-Ideatap.debug.xcconfig"; sourceTree = "<group>"; };
 		FCFA7572942FC8DEA259D04C /* Pods-Ideatap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ideatap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ideatap/Pods-Ideatap.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,8 +92,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77ECD0131B22512400705D4B /* Accounts.framework in Frameworks */,
 				77ECD0111B22511E00705D4B /* Social.framework in Frameworks */,
+				77ECD0131B22512400705D4B /* Accounts.framework in Frameworks */,
+				77ECD0241B227A5100705D4B /* FBSDKLoginKit.framework in Frameworks */,
+				77ECD0231B227A5100705D4B /* FBSDKCoreKit.framework in Frameworks */,
 				779C21651B1E406B00896B81 /* UIKit.framework in Frameworks */,
 				779C21631B1E406400896B81 /* SystemConfiguration.framework in Frameworks */,
 				779C21691B1E427D00896B81 /* GoogleOpenSource.framework in Frameworks */,
@@ -150,8 +156,6 @@
 				7799643D1B1E299300A790A5 /* Supporting Files */,
 				779C21471B1E3FFD00896B81 /* Frameworks */,
 				7799645F1B1E2B1D00A790A5 /* Ideatap-Bridging-Header.h */,
-				77ECD0161B2251D200705D4B /* TwitterAuthHelper.h */,
-				77ECD0171B2251D200705D4B /* TwitterAuthHelper.m */,
 			);
 			path = Ideatap;
 			sourceTree = "<group>";
@@ -184,6 +188,10 @@
 		779C21471B1E3FFD00896B81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77ECD0211B227A5100705D4B /* FBSDKCoreKit.framework */,
+				77ECD0221B227A5100705D4B /* FBSDKLoginKit.framework */,
+				77ECD0161B2251D200705D4B /* TwitterAuthHelper.h */,
+				77ECD0171B2251D200705D4B /* TwitterAuthHelper.m */,
 				779C21661B1E427D00896B81 /* GoogleOpenSource.framework */,
 				779C21671B1E427D00896B81 /* GooglePlus.bundle */,
 				779C21681B1E427D00896B81 /* GooglePlus.framework */,

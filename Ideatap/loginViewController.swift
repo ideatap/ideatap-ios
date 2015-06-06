@@ -33,9 +33,6 @@ class loginViewController: UIViewController, GPPSignInDelegate {
 
     @IBAction func loginBtn(sender: AnyObject) {
         if let provider = sender.restorationIdentifier! {
-            if provider == "facebook" {
-                return
-            }
             if loginHelper != nil {
                 loader.hidden = false
                 view.userInteractionEnabled = false
