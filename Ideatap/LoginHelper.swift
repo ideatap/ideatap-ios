@@ -91,8 +91,6 @@ class LoginHelper : NSObject {
                         // All of this should be done better!!
                         var newUser = ["":""]
                         if provider == "facebook" {
-                            println(authData)
-                            println(authData.providerData)
                             newUser = [
                                 "provider": authData.provider,
                                 "email": authData.providerData["email"] as! String,
