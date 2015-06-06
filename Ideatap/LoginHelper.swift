@@ -100,6 +100,7 @@ class LoginHelper : NSObject {
                         }else {
                             newUser = [
                                 "provider": authData.provider,
+                                "provider_id": authData.providerData["id"] as! String,
                                 "email": authData.providerData["email"] as! String,
                                 "username": authData.providerData["displayName"] as! String,
                                 "first_name": authData.providerData["cachedUserProfile"]!["given_name"] as! String,
