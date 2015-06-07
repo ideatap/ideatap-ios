@@ -9,7 +9,7 @@
 class LoginHelper : NSObject {
     
     let fb: Firebase = Firebase(url: "https://idea-tap.firebaseio.com")
-    let delegate: GPPSignInDelegate?
+    var delegate: GPPSignInDelegate!
     
     static var isLoggedIn: Bool {
         let fb = Firebase(url: "https://idea-tap.firebaseio.com")
@@ -154,9 +154,7 @@ class LoginHelper : NSObject {
         fb.unauth()
     }
     
-    init(delegate: loginViewController) {
-        self.delegate = delegate
-        
+    override init() {
         super.init()
     }
    

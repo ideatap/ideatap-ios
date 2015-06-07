@@ -18,7 +18,8 @@ class loginViewController: UIViewController, GPPSignInDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginHelper = LoginHelper(delegate: self)
+        loginHelper = LoginHelper()
+        loginHelper!.delegate = self
         
         var bgImage: UIImageView = UIImageView(image: UIImage(named: "login-bg")!)
         bgImage.contentMode = .ScaleToFill
@@ -49,7 +50,7 @@ class loginViewController: UIViewController, GPPSignInDelegate {
         
         loadCloud()
         
-        NSTimer.scheduledTimerWithTimeInterval(90.0, target: self, selector: Selector("loadCloud"), userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(45.0, target: self, selector: Selector("loadCloud"), userInfo: nil, repeats: true)
     }
     
     func loadCloud() {
