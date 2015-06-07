@@ -11,13 +11,76 @@ import UIKit
 class loginViewController: UIViewController, GPPSignInDelegate {
     
     var loginHelper: LoginHelper?
-
-    @IBOutlet weak var loader: UIActivityIndicatorView!
     
+    @IBOutlet weak var googleBtn: UIButton!
+    @IBOutlet weak var twitterBtn: UIButton!
+    @IBOutlet weak var facebookBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loginHelper = LoginHelper(delegate: self)
+        
+        var bgImage: UIImageView = UIImageView(image: UIImage(named: "login-bg")!)
+        bgImage.contentMode = .ScaleToFill
+        view.addSubview(bgImage)
+        view.sendSubviewToBack(bgImage)
+    }
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        googleBtn.center.x   -= view.bounds.width
+        twitterBtn.center.x  -= view.bounds.width
+        facebookBtn.center.x -= view.bounds.width
+        
+        UIView.animateWithDuration(0.7, delay: 0.0, usingSpringWithDamping: 0.8,
+            initialSpringVelocity: 0.8, options: nil, animations: {
+                self.googleBtn.center.x += self.view.bounds.width
+        }, completion: nil)
+        UIView.animateWithDuration(0.7, delay: 0.2, usingSpringWithDamping: 0.8,
+            initialSpringVelocity: 0.8, options: nil, animations: {
+                self.twitterBtn.center.x += self.view.bounds.width
+        }, completion: nil)
+        UIView.animateWithDuration(0.7, delay: 0.4, usingSpringWithDamping: 0.8,
+            initialSpringVelocity: 0.8, options: nil, animations: {
+                self.facebookBtn.center.x += self.view.bounds.width
+        }, completion: nil)
+        
+        loadCloud()
+        
+        NSTimer.scheduledTimerWithTimeInterval(90.0, target: self, selector: Selector("loadCloud"), userInfo: nil, repeats: true)
+    }
+    
+    func loadCloud() {
+        var cloudView = UIView(frame: CGRectMake(0, 0, view.bounds.width, view.bounds.height))
+
+        var imageArray: [UIImage] = [ UIImage(named: "cloud-1.png")!, UIImage(named: "cloud-2.png")!]
+        var image = imageArray[random() % 1]
+        var cloud: CALayer = CALayer()
+        cloud.contents = image.CGImage
+        cloud.bounds = CGRectMake(0, 0, image.size.width, image.size.height)
+        cloud.position = CGPointMake(view.bounds.size.width / 2, image.size.height / 2)
+        cloudView.layer.addSublayer(cloud)
+        view.insertSubview(cloudView, atIndex: 1)
+        
+        var startPt: CGPoint = CGPointMake(view.bounds.size.width + (1 + CGFloat(random()) % view.bounds.size.width), cloud.position.y)
+        var endPt: CGPoint = CGPointMake(cloud.bounds.size.width / -2, cloud.position.y);
+        
+        var anim: CABasicAnimation = CABasicAnimation(keyPath: "position")
+        anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        anim.fromValue = NSValue(CGPoint: startPt)
+        anim.toValue = NSValue(CGPoint: endPt)
+        anim.repeatCount = Float.infinity
+        anim.duration = 90.0
+        
+        var fadeIn: CABasicAnimation = CABasicAnimation(keyPath: "opacity")
+        fadeIn.fromValue = NSNumber(int: 0)
+        fadeIn.toValue = NSNumber(int: 1)
+        fadeIn.duration = 0.4
+        
+        cloud.addAnimation(fadeIn, forKey: "opacity")
+        cloud.addAnimation(anim, forKey: "position")
     }
     
     func finishedWithAuth(auth: GTMOAuth2Authentication!, error: NSError!) {
@@ -34,10 +97,8 @@ class loginViewController: UIViewController, GPPSignInDelegate {
     @IBAction func loginBtn(sender: AnyObject) {
         if let provider = sender.restorationIdentifier! {
             if loginHelper != nil {
-                loader.hidden = false
                 view.userInteractionEnabled = false
                 loginHelper!.login(provider, closure: {
-                    self.loader.hidden = true
                     self.view.userInteractionEnabled = true
                     self.dismissViewControllerAnimated(false, completion: nil)
                 })

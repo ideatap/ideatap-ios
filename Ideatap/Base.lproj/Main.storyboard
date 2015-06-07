@@ -68,12 +68,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="google" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmo-Zg-BEG">
-                                <rect key="frame" x="154" y="66" width="92" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ideatap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7Y-D6-JnA">
+                                <rect key="frame" x="0.0" y="83" width="600" height="72"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="92" id="NnI-VC-3VA"/>
+                                    <constraint firstAttribute="width" constant="600" id="giv-3A-FoB"/>
+                                    <constraint firstAttribute="height" constant="72" id="kQf-nB-z1F"/>
                                 </constraints>
-                                <state key="normal" title="Google">
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="google" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmo-Zg-BEG">
+                                <rect key="frame" x="190" y="330" width="221" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.14118574389999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="3x1-QD-t9h"/>
+                                    <constraint firstAttribute="height" constant="40" id="Z9w-uU-RmL"/>
+                                </constraints>
+                                <state key="normal" title="Login with Google">
+                                    <color key="titleColor" red="1" green="0.98790461259999995" blue="0.98959908789999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -81,11 +93,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="facebook" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFL-8I-x7I">
-                                <rect key="frame" x="254" y="66" width="92" height="30"/>
+                                <rect key="frame" x="190" y="430" width="221" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="92" id="qTy-8R-nIz"/>
+                                    <constraint firstAttribute="height" constant="40" id="Kbg-6z-U9f"/>
                                 </constraints>
-                                <state key="normal" title="Facebook">
+                                <state key="normal" title="Login with Facebook">
+                                    <color key="titleColor" red="1" green="0.98790461259999995" blue="0.98959908789999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -93,60 +107,55 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="twitter" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9R-f7-CC1">
-                                <rect key="frame" x="354" y="66" width="92" height="30"/>
+                                <rect key="frame" x="190" y="380" width="221" height="40"/>
+                                <color key="backgroundColor" red="0.62927257383137625" green="0.80361061744769979" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="92" id="mkQ-7b-8Hv"/>
+                                    <constraint firstAttribute="height" constant="40" id="YN9-u4-LFk"/>
                                 </constraints>
-                                <state key="normal" title="Twitter">
+                                <state key="normal" title="Login with Twitter">
+                                    <color key="titleColor" red="1" green="0.98790461259999995" blue="0.98959908789999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="loginBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uch-qq-aNg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7Y-D6-JnA">
-                                <rect key="frame" x="274" y="28" width="53" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="APf-FP-TdF">
-                                <rect key="frame" x="290" y="290" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="APf-FP-TdF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="270" id="BI3-au-VEz"/>
-                            <constraint firstItem="d9R-f7-CC1" firstAttribute="baseline" secondItem="ZFL-8I-x7I" secondAttribute="baseline" id="GFM-xu-RY1"/>
-                            <constraint firstItem="d9R-f7-CC1" firstAttribute="leading" secondItem="ZFL-8I-x7I" secondAttribute="trailing" constant="8" symbolic="YES" id="IEU-2P-vqZ"/>
-                            <constraint firstItem="ZFL-8I-x7I" firstAttribute="leading" secondItem="Mmo-Zg-BEG" secondAttribute="trailing" constant="8" symbolic="YES" id="PfY-Ph-co2"/>
-                            <constraint firstAttribute="centerX" secondItem="APf-FP-TdF" secondAttribute="centerX" id="Q9N-eb-MFg"/>
-                            <constraint firstItem="APf-FP-TdF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="274" id="Rny-2N-GtT"/>
-                            <constraint firstAttribute="centerY" secondItem="APf-FP-TdF" secondAttribute="centerY" id="SaL-cb-V5D"/>
-                            <constraint firstItem="ZFL-8I-x7I" firstAttribute="baseline" secondItem="Mmo-Zg-BEG" secondAttribute="baseline" id="VMU-Z5-yCi"/>
-                            <constraint firstItem="F7Y-D6-JnA" firstAttribute="centerX" secondItem="ZFL-8I-x7I" secondAttribute="centerX" id="VOP-DL-Jju"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="APf-FP-TdF" secondAttribute="trailing" constant="274" id="WDg-43-Tx6"/>
-                            <constraint firstItem="F7Y-D6-JnA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="WYa-Nu-L9q"/>
-                            <constraint firstItem="ZFL-8I-x7I" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="46" id="hiJ-td-Vq5"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="APf-FP-TdF" secondAttribute="bottom" constant="290" id="o55-o9-ZET"/>
-                            <constraint firstItem="ZFL-8I-x7I" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="tuK-8k-f35"/>
+                            <constraint firstItem="F7Y-D6-JnA" firstAttribute="centerX" secondItem="Mmo-Zg-BEG" secondAttribute="centerX" id="8xb-Qz-TzV"/>
+                            <constraint firstItem="F7Y-D6-JnA" firstAttribute="centerX" secondItem="d9R-f7-CC1" secondAttribute="centerX" id="8yU-p7-mpO"/>
+                            <constraint firstAttribute="centerX" secondItem="F7Y-D6-JnA" secondAttribute="centerX" id="B8l-He-Ehz"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZFL-8I-x7I" secondAttribute="bottom" constant="130" id="CyG-GA-EpP"/>
+                            <constraint firstItem="d9R-f7-CC1" firstAttribute="leading" secondItem="Mmo-Zg-BEG" secondAttribute="leading" id="G9e-IO-VTx"/>
+                            <constraint firstItem="Mmo-Zg-BEG" firstAttribute="top" secondItem="F7Y-D6-JnA" secondAttribute="bottom" constant="218" id="HhL-pQ-TVC"/>
+                            <constraint firstItem="F7Y-D6-JnA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="63" id="I8D-D4-9ui"/>
+                            <constraint firstItem="d9R-f7-CC1" firstAttribute="top" secondItem="Mmo-Zg-BEG" secondAttribute="bottom" constant="10" id="Keu-8L-gdM"/>
+                            <constraint firstItem="d9R-f7-CC1" firstAttribute="trailing" secondItem="Mmo-Zg-BEG" secondAttribute="trailing" id="OTZ-tf-hM4"/>
+                            <constraint firstItem="d9R-f7-CC1" firstAttribute="leading" secondItem="ZFL-8I-x7I" secondAttribute="leading" id="TGk-Gy-ZDq"/>
+                            <constraint firstItem="F7Y-D6-JnA" firstAttribute="centerX" secondItem="ZFL-8I-x7I" secondAttribute="centerX" id="ZwI-R6-sha"/>
+                            <constraint firstItem="Mmo-Zg-BEG" firstAttribute="centerX" secondItem="F7Y-D6-JnA" secondAttribute="centerX" id="cqI-v7-Sof"/>
+                            <constraint firstItem="ZFL-8I-x7I" firstAttribute="top" secondItem="d9R-f7-CC1" secondAttribute="bottom" constant="10" id="jzJ-6Y-q7X"/>
+                            <constraint firstItem="d9R-f7-CC1" firstAttribute="trailing" secondItem="ZFL-8I-x7I" secondAttribute="trailing" id="zII-NI-j0I"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="BI3-au-VEz"/>
-                                <exclude reference="Rny-2N-GtT"/>
-                                <exclude reference="WDg-43-Tx6"/>
-                                <exclude reference="o55-o9-ZET"/>
+                                <exclude reference="8xb-Qz-TzV"/>
+                                <exclude reference="8yU-p7-mpO"/>
+                                <exclude reference="ZwI-R6-sha"/>
+                                <exclude reference="HhL-pQ-TVC"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="loader" destination="APf-FP-TdF" id="gfe-8u-pye"/>
+                        <outlet property="facebookBtn" destination="ZFL-8I-x7I" id="1s6-AT-5PS"/>
+                        <outlet property="googleBtn" destination="Mmo-Zg-BEG" id="OXe-sn-KgY"/>
+                        <outlet property="twitterBtn" destination="d9R-f7-CC1" id="ohR-ar-fhB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="721" y="705"/>
+            <point key="canvasLocation" x="721" y="743"/>
         </scene>
     </scenes>
 </document>
