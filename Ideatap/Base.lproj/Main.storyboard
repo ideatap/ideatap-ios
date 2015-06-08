@@ -77,44 +77,44 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="54"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="google" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmo-Zg-BEG">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="google" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmo-Zg-BEG" customClass="LoginButton" customModule="Ideatap" customModuleProvider="target">
                                 <rect key="frame" x="190" y="330" width="221" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.14118574389999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.82745098039215681" green="0.21568627450980393" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="221" id="3x1-QD-t9h"/>
                                     <constraint firstAttribute="height" constant="40" id="Z9w-uU-RmL"/>
                                 </constraints>
                                 <state key="normal" title="Login with Google">
                                     <color key="titleColor" red="1" green="0.98790461259999995" blue="0.98959908789999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="loginBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="u7V-nu-BY3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="facebook" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFL-8I-x7I">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="facebook" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFL-8I-x7I" customClass="LoginButton" customModule="Ideatap" customModuleProvider="target">
                                 <rect key="frame" x="190" y="430" width="221" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.27450980392156865" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Kbg-6z-U9f"/>
                                 </constraints>
                                 <state key="normal" title="Login with Facebook">
                                     <color key="titleColor" red="1" green="0.98790461259999995" blue="0.98959908789999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="loginBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4yC-vM-KSO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="twitter" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9R-f7-CC1">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="twitter" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9R-f7-CC1" customClass="LoginButton" customModule="Ideatap" customModuleProvider="target">
                                 <rect key="frame" x="190" y="380" width="221" height="40"/>
-                                <color key="backgroundColor" red="0.62927257383137625" green="0.80361061744769979" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.050980392156862744" green="0.60784313725490191" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="YN9-u4-LFk"/>
                                 </constraints>
                                 <state key="normal" title="Login with Twitter">
-                                    <color key="titleColor" red="1" green="0.98790461259999995" blue="0.98959908789999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="0.98511354144870422" blue="0.99627838536217606" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="loginBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uch-qq-aNg"/>

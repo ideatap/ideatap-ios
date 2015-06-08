@@ -12,9 +12,9 @@ class loginViewController: UIViewController, GPPSignInDelegate {
     
     var loginHelper: LoginHelper?
     
-    @IBOutlet weak var googleBtn: UIButton!
-    @IBOutlet weak var twitterBtn: UIButton!
-    @IBOutlet weak var facebookBtn: UIButton!
+    @IBOutlet weak var googleBtn: LoginButton!
+    @IBOutlet weak var twitterBtn: LoginButton!
+    @IBOutlet weak var facebookBtn: LoginButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
