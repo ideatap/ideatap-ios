@@ -21,8 +21,13 @@ class loginViewController: UIViewController, GPPSignInDelegate {
         loginHelper = LoginHelper()
         loginHelper!.delegate = self
         
+        googleBtn.setFontIcon(String.fontAwesomeIconWithName(.GooglePlus))
+        twitterBtn.setFontIcon(String.fontAwesomeIconWithName(.Twitter))
+        facebookBtn.setFontIcon(String.fontAwesomeIconWithName(.Facebook))
+        
         var bgImage: UIImageView = UIImageView(image: UIImage(named: "login-bg")!)
-        bgImage.contentMode = .ScaleToFill
+        bgImage.frame = CGRectMake(0, 0, view.frame.width, view.frame.height)
+        bgImage.contentMode = .ScaleAspectFill
         view.addSubview(bgImage)
         view.sendSubviewToBack(bgImage)
     }
