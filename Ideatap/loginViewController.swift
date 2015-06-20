@@ -104,9 +104,14 @@ class loginViewController: UIViewController, GPPSignInDelegate {
         if let provider = sender.restorationIdentifier! {
             if loginHelper != nil {
                 view.userInteractionEnabled = false
-                loginHelper!.login(provider, closure: {
+                loginHelper!.login(provider, closure: { success in
                     self.view.userInteractionEnabled = true
-                    self.dismissViewControllerAnimated(false, completion: nil)
+                    if success != false {
+                        self.dismissViewControllerAnimated(false, completion: nil)
+                    }else {
+                        let errorAlert = UIAlertView(title: "Error", message: "We had trouble to log you in, try again. Maybe you dont have an account on your phone etc.", delegate: self, cancelButtonTitle: "ok")
+                        errorAlert.show()
+                    }
                 })
             }
         }

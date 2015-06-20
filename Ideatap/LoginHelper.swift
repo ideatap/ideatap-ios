@@ -20,8 +20,8 @@ class LoginHelper : NSObject {
         }
     }
     
-    var closure = {() -> () in
-        return
+    var closure:(Bool)->Void = {
+        success in
     }
     
     func authenticateWithGoogle() {
@@ -38,6 +38,7 @@ class LoginHelper : NSObject {
         twitterAuthHelper.selectTwitterAccountWithCallback { error, accounts in
             if error != nil {
                 println("error retriving twitter accs")
+                self.closure(false)
                 // Error retrieving Twitter accounts
             } else if accounts.count >= 1 {
                 // Select an account. Here we pick the first one for simplicity
@@ -47,6 +48,7 @@ class LoginHelper : NSObject {
                     
                     if error != nil {
                         // Error authenticating account
+                        self.closure(false)
                     } else {
                         // User logged in!
                         self.register("twitter", authData: authData)
@@ -65,7 +67,7 @@ class LoginHelper : NSObject {
                 println("error")
             }else if result.isCancelled {
                 println("user cancelled")
-                self.closure()
+                self.closure(false)
             }else {
                 let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
                 self.register("facebook", authData: accessToken)
@@ -111,8 +113,9 @@ class LoginHelper : NSObject {
                         }
                         self.fb.childByAppendingPath("users")
                             .childByAppendingPath(authData.uid).setValue(newUser)
-                        self.closure()
+                        self.closure(true)
                     }else {
+                        self.closure(false)
                         println(error)
                     }
             })
@@ -127,11 +130,11 @@ class LoginHelper : NSObject {
             
             self.fb.childByAppendingPath("users")
                 .childByAppendingPath(authData.uid).setValue(newUser)
-            self.closure()
+            self.closure(true)
         }
     }
     
-    func login(provider: String, closure: () -> ()) {
+    func login(provider: String, closure: (Bool) -> Void) {
         self.closure = closure
         
         switch provider {

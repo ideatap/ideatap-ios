@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7772379D1B2B31830001647F /* FrontPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7772379C1B2B31830001647F /* FrontPageTableViewController.swift */; };
 		779964401B1E299300A790A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799643F1B1E299300A790A5 /* AppDelegate.swift */; };
-		779964421B1E299300A790A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779964411B1E299300A790A5 /* ViewController.swift */; };
 		779964451B1E299300A790A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779964431B1E299300A790A5 /* Main.storyboard */; };
 		779964471B1E299300A790A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779964461B1E299300A790A5 /* Images.xcassets */; };
 		7799644A1B1E299300A790A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 779964481B1E299300A790A5 /* LaunchScreen.xib */; };
@@ -51,10 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7772379C1B2B31830001647F /* FrontPageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontPageTableViewController.swift; sourceTree = "<group>"; };
 		7799643A1B1E299300A790A5 /* Ideatap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ideatap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7799643E1B1E299300A790A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7799643F1B1E299300A790A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		779964411B1E299300A790A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		779964441B1E299300A790A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		779964461B1E299300A790A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		779964491B1E299300A790A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -129,6 +129,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7772379B1B2B30F90001647F /* frontpage */ = {
+			isa = PBXGroup;
+			children = (
+				7772379C1B2B31830001647F /* FrontPageTableViewController.swift */,
+			);
+			name = frontpage;
+			sourceTree = "<group>";
+		};
 		779964311B1E299300A790A5 = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +163,6 @@
 				7799643F1B1E299300A790A5 /* AppDelegate.swift */,
 				77F864D91B277A680020B5FD /* Helpers */,
 				92C1222F1B252C3800C7AFCE /* ui */,
-				779964411B1E299300A790A5 /* ViewController.swift */,
 				779964431B1E299300A790A5 /* Main.storyboard */,
 				779964481B1E299300A790A5 /* LaunchScreen.xib */,
 				779964461B1E299300A790A5 /* Images.xcassets */,
@@ -227,6 +234,7 @@
 		92C1222F1B252C3800C7AFCE /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				7772379B1B2B30F90001647F /* frontpage */,
 				77F864D81B277A5B0020B5FD /* Login */,
 			);
 			name = ui;
@@ -310,6 +318,7 @@
 		779964321B1E299300A790A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Ideatap;
 				TargetAttributes = {
@@ -417,8 +426,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				779964421B1E299300A790A5 /* ViewController.swift in Sources */,
 				92C122311B252C4F00C7AFCE /* LoginButton.swift in Sources */,
+				7772379D1B2B31830001647F /* FrontPageTableViewController.swift in Sources */,
 				77ECD0181B2251D200705D4B /* TwitterAuthHelper.m in Sources */,
 				77ECD00D1B22331E00705D4B /* LoginHelper.swift in Sources */,
 				779964401B1E299300A790A5 /* AppDelegate.swift in Sources */,
