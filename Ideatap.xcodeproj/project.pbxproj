@@ -129,12 +129,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7772379B1B2B30F90001647F /* frontpage */ = {
+		7772379B1B2B30F90001647F /* Front Page */ = {
 			isa = PBXGroup;
 			children = (
 				7772379C1B2B31830001647F /* FrontPageTableViewController.swift */,
 			);
-			name = frontpage;
+			name = "Front Page";
 			sourceTree = "<group>";
 		};
 		779964311B1E299300A790A5 = {
@@ -162,7 +162,7 @@
 			children = (
 				7799643F1B1E299300A790A5 /* AppDelegate.swift */,
 				77F864D91B277A680020B5FD /* Helpers */,
-				92C1222F1B252C3800C7AFCE /* ui */,
+				92C1222F1B252C3800C7AFCE /* User Interface */,
 				779964431B1E299300A790A5 /* Main.storyboard */,
 				779964481B1E299300A790A5 /* LaunchScreen.xib */,
 				779964461B1E299300A790A5 /* Images.xcassets */,
@@ -231,13 +231,13 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		92C1222F1B252C3800C7AFCE /* ui */ = {
+		92C1222F1B252C3800C7AFCE /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				7772379B1B2B30F90001647F /* frontpage */,
+				7772379B1B2B30F90001647F /* Front Page */,
 				77F864D81B277A5B0020B5FD /* Login */,
 			);
-			name = ui;
+			name = "User Interface";
 			sourceTree = "<group>";
 		};
 		EF36C9D1B62675FCBCB8301F /* Frameworks */ = {

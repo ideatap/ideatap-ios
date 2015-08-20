@@ -109,7 +109,7 @@ class loginViewController: UIViewController, GPPSignInDelegate {
                     if success != false {
                         self.dismissViewControllerAnimated(false, completion: nil)
                     }else {
-                        let errorAlert = UIAlertView(title: "Error", message: "We had trouble to log you in, try again. Maybe you dont have an account on your phone etc.", delegate: self, cancelButtonTitle: "ok")
+                        let errorAlert = UIAlertView(title: "Error", message: "We were unable to log you in. Ensure you have an account on your phone.", delegate: self, cancelButtonTitle: "Okay")
                         errorAlert.show()
                     }
                 })
